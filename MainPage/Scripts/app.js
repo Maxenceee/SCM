@@ -12,4 +12,4 @@ app.get("/home", function(request, response){
     response.send("SCM!")
 })
 
-app.listen(8080)
+app.listen(3000)

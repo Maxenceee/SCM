@@ -1,4 +1,4 @@
-http.createServer(SCM).listen(process.env.npm_package_config_port)
+//http.createServer(SCM).listen(process.env.npm_package_config_port)
 
 const express = require('express')
 

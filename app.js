@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 
 app.get("/home", function(request, response){
-    response.send(document.querySelector("main_page"))
+    response.send("SCM!")
 })
 
 app.listen(3000)

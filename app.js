@@ -1,11 +1,10 @@
-//http.createServer(SCM).listen(process.env.npm_package_config_port)
 
 const express = require('express')
 
 const app = express()
 
 app.get("/home", function(request, response){
-    response.send(main_page.html)
+    response.send(document.querySelector("main_page"))
 })
 
 app.listen(3000)

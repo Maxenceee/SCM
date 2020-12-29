@@ -1,0 +1,17 @@
+{
+  "name": "maxencegama",
+  "version": "1.0.0",
+  "description": "Site Coiffure Maman",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "NPM Maxence Gama",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

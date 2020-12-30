@@ -14,7 +14,7 @@ const port = 3000
 
 app.get('/home', (request, response) => {
   //response.send('Hello from Express!')
-  response.sendFile('./MainPage/main_page.html');
+  response.sendFile('/home/bitnami/SCM/MainPage/main_page.html');
 })
 
 app.listen(port, (err) => {

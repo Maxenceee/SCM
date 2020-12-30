@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 
 app.get('/home', function(request, response){
-    response.sendFile('./main_page.html');
+    response.sendFile('sftp://bitnami@35.180.44.206/home/bitnami/SCM/MainPage/main_page.html');
 });
 
 /*

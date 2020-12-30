@@ -8,26 +8,24 @@ app.get('/home', function(request, response){
 });
 */
 
-/*
-app.get("/home", function(request, response){
-    //response.send('main_page')
-    var http = require('http'),
-    fs = require('fs');
+const express = require('express')
+const app = express()
+const port = 3000
 
-    fs.readFile('./MainPage/main_page.html', function (err, html) {
-        if (err) {
-            throw err; 
-        }       
-        http.createServer(function(request, response) {  
-            response.writeHeader(200, {"Content-Type": "text/html"});  
-            response.write(html);  
-            response.end();  
-        }).listen(3000);
-    });
+app.get('/', (request, response) => {
+  response.send('Hello from Express!')
+  //response.sendFile('./MainPage/main_page.html');
 })
-app.listen(3000)
-*/
 
+app.listen(port, (err) => {
+  if (err) {
+    return console.log('something bad happened', err)
+  }
+
+  console.log(`server is listening on ${port}`)
+})
+
+/*
 let http = require('http');
 let fs = require('fs');
  
@@ -47,3 +45,4 @@ let handleRequest = (request, response) => {
 };
  
 http.createServer(handleRequest).listen(3000);
+*/

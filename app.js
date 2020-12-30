@@ -17,6 +17,9 @@ app.use(express.static(__dirname + '/public'));
 app.get('/home', (request, response) => {
   //response.send('Hello from Express!')
   response.sendFile('/home/bitnami/SCM/MainPage/main_page.html');
+  response.sendFile('/home/bitnami/SCM/MainPage/public/stylesheets');
+  response.sendFile('/home/bitnami/SCM/MainPage/public/javascripts');
+  response.sendFile('/home/bitnami/SCM/MainPage/public/images');
 })
 
 app.listen(port, (err) => {

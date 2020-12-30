@@ -3,8 +3,8 @@ const express = require('express')
 
 const app = express()
 
-app.get('/', function(request, response){
-    response.sendFile('./MainPage/main_page.html');
+app.get('/home', function(request, response){
+    response.sendFile('./main_page.html');
 });
 
 /*

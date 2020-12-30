@@ -3,9 +3,6 @@ const express = require('express')
 
 const app = express()
 
-const express = require('express');
-const app = new express();
-
 app.get('/', function(request, response){
     response.sendFile('./MainPage/main_page.html');
 });

@@ -12,9 +12,9 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-app.get('/', (request, response) => {
-  response.send('Hello from Express!')
-  //response.sendFile('./MainPage/main_page.html');
+app.get('/home', (request, response) => {
+  //response.send('Hello from Express!')
+  response.sendFile('./MainPage/main_page.html');
 })
 
 app.listen(port, (err) => {

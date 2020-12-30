@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 
 app.get('/home', function(request, response){
-    response.sendFile('./home/bitnami/SCM/MainPage/main_page.html');
+    response.sendFile('home/bitnami/SCM/MainPage/main_page.html');
 });
 
 /*

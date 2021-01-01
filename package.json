@@ -8,7 +8,7 @@
     "start": "node app.js"
   },
   "config" : { 
-    "port" : "8080" 
+    "port" : "3000" 
   }, 
   "keywords": [
     "demo"
